@@ -27,6 +27,11 @@ header img, .title {
 	margin: 10px;
 }
 
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
 #logo {
     size: 200px;
 }
