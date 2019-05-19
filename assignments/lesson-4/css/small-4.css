@@ -1,0 +1,30 @@
+/*stylesheet for preston-4.html*/
+
+/*============Imported fonts==============*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+}
+
+/*================Header================*/
+
+header {
+	margin: 10px auto;
+	background-color: rgb(212, 38, 38);
+	border: 1px solid #bbb;
+	box-shadow: 0 0 30px #777;
+    text-align: center;
+}
+
+header img, nav {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+#logo {
+    size: 200px;
+}
