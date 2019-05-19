@@ -4,22 +4,24 @@
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
+    color: #395c6b;
 }
 
 /*================Header================*/
 
 header {
 	margin: 10px auto;
-	background-color: rgb(212, 38, 38);
+    background-color: #395c6b;
+    color: #bcd3f2;
 	border: 1px solid #bbb;
 	box-shadow: 0 0 30px #777;
     text-align: center;
 }
 
-header img, nav {
+header img, .title {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 10px;
@@ -27,4 +29,50 @@ header img, nav {
 
 #logo {
     size: 200px;
+}
+
+/*================links================*/
+
+nav a:link {
+    color: #e6e1c5;
+}
+
+nav a:visited {
+    color: #80a4ed;
+}
+
+nav a:hover {
+    color: #bcd3f2;
+}
+
+nav a:active {
+    color: #d4cb92;
+}
+
+/*================main================*/
+
+h1, h2, h3, h4 {
+    font-family: 'Americane', 'Calibri', sans-serif;
+    font-weight: bold;
+    font-stretch: condensed;
+}
+
+.summary {
+    background-color: #bcd3f2;
+    border: 1px solid #80a4ed;
+}
+
+article {
+    background-color: #395c6b;
+    color: #bcd3f2;
+}
+.contact {
+    background-color: #80a4ed;
+    border: 1px solid #395c6b;
+}
+
+/*================footer================*/
+
+footer {
+    text-align: center;
 }
