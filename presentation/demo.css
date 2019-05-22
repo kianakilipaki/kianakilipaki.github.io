@@ -1,0 +1,49 @@
+body {
+    width: 70%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Cascade rule: read from top to bottom, newest rule gets priority*/
+h1 {
+    color: green;
+}
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: purple;
+    color: blue;
+}
+
+/*Inheritance: most rules are inherited from parent elements 
+to child elements*/
+.inheritance {
+    color: red;
+}
+
+/*Some elements with default properties will not inherit*/
+a {
+    color: inherit;
+}
+
+/*Some properties are not inherited*/
+.inheritance {
+    border: 2px solid blue;
+}
+
+/*Specificity: the more specific the selector, the more important it is*/
+#specificity-id {
+    color: green;
+}
+
+.specificity-class {
+    color: purple;
+}
+
+/* the !important keyword trumps all*/
+.specificity-class {
+    color: purple !important;
+}

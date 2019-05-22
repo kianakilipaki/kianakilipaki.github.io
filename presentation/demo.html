@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Presentaion | Alani Gilbert</title>
+        <meta name="description" content="presentation for CIT 230">
+    
+        <link rel="stylesheet" href="demo.css">
+    </head>
+
+    <body>
+        <h1>CSS Cascade and Inheritance</h1>
+        
+        <section>
+            <h2>Cascading Style Sheets</h2>
+            <p>CSS is the abbreviation for <i>Cascading Style Sheets.</i> 
+            Which means that CSS rules are read from top to bottom. So,  
+            if two selectors are the same, the latter one will be applied. 
+            The cascade rule also applies to declarations within the 
+            same selector.</p>
+        </section>
+
+        <section class="inheritance">
+            <h2>Inheritance</h2>
+            <p>One of the most uselful things in CSS is that the styles
+            can be <b>inherited</b> from the parent element to the child element. 
+            This means if I apply a rule to a parent element then that
+            same rule will be applied to all of its children elements as well.   
+            For example, if I were to make the color of this section 
+            red, then all of the elements inside of this section will turn 
+            red as well.</p>
+
+            <p>Inheritance makes styling much easier, because without it we 
+            would have to style all of the child elements as well as the parent
+            elements, which would be annoying. Imagine having to change the font 
+            for every single element on your page.</p>
+
+            <p>In some cases the property is not inherited though. Links, for example,  
+            will not inherit some properties, like color, because they already 
+            have a default color. If you want to change the link color you will 
+            have to change it individually. One easy way to fix 
+            this is use the keyword <i>inherit.</i> Which will have the selector 
+            inherit the property of its parent element.
+            <a href="http://www.byui.edu">I am a link!</a></p>
+
+            <p id="border">There are also some properties that cannot be inherited by any
+            elements.The border property is not inherited. If it were then we would
+            have a border around every element, including links, italics, lists, and 
+            so forth which also wouldn't look good. We would have to go through and unstyle
+            anything we didn't want a border around.</p>
+        </section>
+
+        <section class="specificity-class" id="specificity-id">
+            <h2>Specificity</h2>
+            <p>Specificity changes the order the rules are read based 
+            on how specific the selector is. The list below shows the order of
+            specificity, highest to lowest</p>
+            
+            <ul>
+                <li>Inline styles</li>
+                <li>ID selectors</li>
+                <li>Class selectors</li>
+                <li>Element selectors</li>
+                <li>Universal selectors</li>
+            </ul>
+
+            <p>Typically, the rule with the highest specificity will win. If two 
+            rules have the same specificity then it will win based off of the cascade 
+            rule: newer rule gets priority. There is however, a keyword <b>!important</b> 
+            which trumps all.</b></p>
+        </section>
+
+    </body>
+</html>
