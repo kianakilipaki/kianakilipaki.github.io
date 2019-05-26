@@ -6,11 +6,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.8em;
+
     color: #395c6b;
     background-color: #ddd;
-    width: 800px;
-    margin: auto;
 }
 
 /*================Header================*/
@@ -28,14 +26,21 @@ header h1 {
     padding: .5rem; 
 }
 
+.motto {
+    text-align: center;
+}
+
 #logo {
     width: 50px;
+    position: relative;
+    top: 50px;
+    left: 100px;
 }
 
 /*================nav style================*/
 nav {	
     margin: 0 auto;	 
-    background-color: #000;	
+    background-color: #395c6b;	
     list-style: none; 
     text-align: center; 
 }
@@ -92,28 +97,80 @@ nav a:active {
 
 /*================main================*/
 
+main {
+    width: 80%;
+    margin: auto;
+}
+
 h1, h2, h3, h4 {
     font-family: 'Americane', 'Calibri', sans-serif;
     font-weight: bold;
     font-stretch: condensed;
 }
 
+h1 {
+    text-align: center;
+}
+
 #clouds-img { 
-    width: 800px;
+    width: 100%;
+}
+
+.icons {
+    width: 20px;
+}
+
+figcaption {
+    visibility: hidden;
 }
 
 .summary {
-    background-color: #bcd3f2;
-    border: 1px solid #80a4ed;
+    background-color: rgba(17, 108, 136, 0.7);
+    border: 1px solid #395c6b;
+    color: #fff;
+    width: 200px;
+    padding: 10px;
+    position: relative;
+    top: -450px;
+    left: 30px;
+    text-align: center;
+}
+
+.summary ul {
+    list-style: none;
+    
+}
+
+.summary h2 {
+    text-decoration: underline;
+    
+}
+
+.summary span {
+    color: #d4cb92;
 }
 
 article {
     background-color: #395c6b;
     color: #bcd3f2;
 }
+
+#tornado {
+    width: 300px;
+    float: right;
+    margin: 10px;
+}
+
 .contact {
     background-color: #80a4ed;
     border: 1px solid #395c6b;
+}
+
+#map {
+    width: 300px;
+    margin: 10px;
+    border: 2px inset #395c6b;
+    float: right;
 }
 
 /*================footer================*/
