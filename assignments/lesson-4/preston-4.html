@@ -7,18 +7,25 @@
             <title>UmbrellaWeather | preston-4</title>
             <meta name="description" content="Site plan for the umbrellaweather.net website.">
             
-            <link rel="stylesheet" href="/assignments/lesson-4/css/small-4.css">
+            <link rel="stylesheet" href="./css/small-4.css">
+            <link rel="stylesheet" media="(min-width: 800px)" href="./css/large-4.css">
+
+            <script>
+                function toggleMenu() {
+	                document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+                }
+            </script>
     </head>
 
     <body>
         <header>
             <!--logo-->
-            <img src="images/foraging.jpg" alt="random placeholder photo for now" id="logo">
+            <img src="images/logo.png" alt="umbrella weather logo" id="logo">
             <h1 class="title">UMBRELLAweather</h1>
             <nav class="motto">Need an umbrella today?</nav>
             <nav>
-                <ul>
-                    <li><a href="preston-4.html">Home</a></li>
+                <ul class="navigation">
+                    <li><a href="preston-4.html" onclick="toggleMenu()">&#9776; Home</a></li>
                     <li><a href="preston-4.html">Preston</a></li>
                     <li><a href="preston-4.html">Soda Springs</a></li>
                     <li><a href="preston-4.html">Fish Haven</a></li>
@@ -31,7 +38,7 @@
         <main>
             <h1>Preston</h1>
             <!--image here-->
-            <img src="images/foraging.jpg" alt="random placeholder photo for now">
+            <img src="images/billy-huynh-327754-unsplash.jpg" alt="clouds banner" id="clouds-img">
             <section class="summary">
                 <h3>Weather Summary</h3>
                 <p>Sunny weather in preston!</p>

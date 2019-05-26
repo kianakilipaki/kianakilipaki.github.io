@@ -8,32 +8,68 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     color: #395c6b;
+    background-color: #ddd;
+    width: 800px;
+    margin: auto;
 }
 
 /*================Header================*/
 
 header {
 	margin: 10px auto;
-    background-color: #395c6b;
+    background-color: #3b3b3b;
     color: #bcd3f2;
 	border: 1px solid #bbb;
 	box-shadow: 0 0 30px #777;
-    text-align: center;
 }
 
-header img, .title {
-	display: inline-block;
-	vertical-align: middle;
-	margin: 10px;
-}
-
-nav a {
-    display: inline-block;
-    text-decoration: none;
+header h1 {
+    color: #fff; 
+    padding: .5rem; 
 }
 
 #logo {
-    size: 200px;
+    width: 50px;
+}
+
+/*================nav style================*/
+nav {	
+    margin: 0 auto;	 
+    background-color: #000;	
+    list-style: none; 
+    text-align: center; 
+}
+
+nav li:first-child { 
+    display: block;
+}
+
+.navigation li { 
+    display: none;
+}
+
+.navigation a {	
+    display: block;	
+    color: #fff; 
+    padding: .75rem;	
+    text-align: center;	
+    text-decoration: none;
+}
+
+.responsive li { 
+    display: block; 
+}
+
+/* Media Query for medium + screens */
+@media only screen and (min-width: 32.5em) {
+    .navigation li:first-child { 
+        display: none;	
+    }
+
+	.navigation li { 
+        display: inline-block; 
+        margin-right: 1rem;
+    }
 }
 
 /*================links================*/
@@ -45,10 +81,10 @@ nav a:link {
 nav a:visited {
     color: #80a4ed;
 }
-
-nav a:hover {
-    color: #bcd3f2;
-}
+nav a:hover {	
+    color: #000; 
+    background-color: #fff; 
+    font-weight: 700;	}
 
 nav a:active {
     color: #d4cb92;
@@ -60,6 +96,10 @@ h1, h2, h3, h4 {
     font-family: 'Americane', 'Calibri', sans-serif;
     font-weight: bold;
     font-stretch: condensed;
+}
+
+#clouds-img { 
+    width: 800px;
 }
 
 .summary {
