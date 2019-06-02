@@ -1,12 +1,12 @@
 /*stylesheet for preston-4.html*/
 
+
 /*============Imported fonts==============*/
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
 
 body {
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: Verdana, sans-serif;
     color: #395c6b;
     background-color: #ddd;
 }
@@ -49,11 +49,11 @@ nav li:first-child {
     display: block;
 }
 
-.navigation li { 
+nav ul li { 
     display: none;
 }
 
-.navigation a {	
+nav a {	
     display: block;	
     color: #fff; 
     padding: .75rem;	
@@ -63,18 +63,6 @@ nav li:first-child {
 
 .responsive li { 
     display: block; 
-}
-
-/* Media Query for medium + screens */
-@media only screen and (min-width: 32.5em) {
-    .navigation li:first-child { 
-        display: none;	
-    }
-
-	.navigation li { 
-        display: inline-block; 
-        margin-right: 1rem;
-    }
 }
 
 /*================links================*/
@@ -114,6 +102,7 @@ h1 {
 
 #clouds-img { 
     width: 100%;
+    margin: 0;
 }
 
 .icons {
@@ -153,27 +142,24 @@ figcaption {
 article {
     background-color: #395c6b;
     color: #bcd3f2;
-    float: left;
-    width: 400px;
+    padding: 15px;
+    width: 70%;
 }
 
 #tornado {
-    width: 300px;
+    width: 20%; 
     float: right;
-    margin: 10px;
 }
 
-.all-contact {
+.contact {
+    padding: 20px;
+    width: 60%; 
     background-color: #80a4ed;
     border: 1px solid #395c6b;
 }
-.contact {
-    float: left;
-    width: 400px; 
-}
 
 #map {
-    width: 300px;
+    width: 40%;
     margin: 10px;
     border: 2px inset #395c6b;
     float: right;
