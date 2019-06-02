@@ -13,35 +13,36 @@
             <link rel="stylesheet" href="./css/medium.css">
             <link rel="stylesheet" href="./css/large.css">
 
-            <script>
-                function toggleMenu() {
-	                document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-                }
-            </script>
+            <!--Javascript-->
+            <script src="./js/hamburger.js"></script>
+            <script src="js/currentdate.js"></script>
     </head>
 
     <body>
-        <header>
+        <header class="clearfix">
             <!--logo-->
-            <img src="images/logo.png" alt="umbrella weather logo" id="logo">
+            <img src="images/logo-75.png" alt="umbrella weather logo" id="logo">
             <h1 class="title">Umbrella Weather</h1>
-            <div class="motto">Is it umbrella weather today?</div>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#" onclick="toggleMenu()">&#9776; Home</a></li>
-                    <li><a href="#">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
-                </ul>
-            </nav>
+            <h3>Is it umbrella weather today?</h3>
         </header>
+
+        <nav class="clearfix">
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
 
         <main>
             <h1>Preston Idaho</h1>
             <!--image here-->
-            <img src="images/billy-huynh-327754-unsplash.jpg" alt="clouds banner" id="clouds-img">
+            <figure id="banner">            
+                <img src="./images/hero.jpg" alt="hero banner">
+            </figure>
             <section class="summary">
                 <h2>Weather Summary</h2>
                 <ul>
@@ -53,42 +54,49 @@
                 </ul>
             </section>
 
-            <section>
-                <h2>5 Day Forecast</h2>
-                    <figure>
-                            <img src="images/sunny.png" alt="icon" class="icons">
-                            <figcaption>
-                                <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 			    
-                                title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    
-                                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-                            </figcaption>
-                        </figure>
+            <section class="article">
+                <figure id="tornado">                
+                    <img src="images/tornado-541911_1280.jpg" alt="Tornado img">
+                    <figcaption>Photo taken by Devin Campbell</figcaption>
+                </figure>
+
+                <h2>Tornado in Preston</h2>
+                <h4>by Devin Campbell</h4>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla enim, 
+                pretium et vehicula non, rutrum sed sapien. Vestibulum efficitur est non magna 
+                lacinia, id vulputate sapien convallis. Etiam eget feugiat ante. Maecenas euismod 
+                felis et tellus eleifend eleifend. Sed scelerisque, arcu sit amet elementum sodales, 
+                metus nisl ullamcorper nibh, eget auctor risus eros vel lorem. Fusce condimentum 
+                magna id pretium tristique. Maecenas sagittis placerat sapien, non scelerisque 
+                odio pulvinar eget. Integer eget congue urna, vel mollis arcu.</p>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla enim, 
+                pretium et vehicula non, rutrum sed sapien. Vestibulum efficitur est non magna 
+                lacinia, id vulputate sapien convallis. Etiam eget feugiat ante. Maecenas euismod 
+                felis et tellus eleifend eleifend. Sed scelerisque, arcu sit amet elementum sodales, 
+                metus nisl ullamcorper nibh, eget auctor risus eros vel lorem. Fusce condimentum 
+                magna id pretium tristique. Maecenas sagittis placerat sapien, non scelerisque 
+                odio pulvinar eget. Integer eget congue urna, vel mollis arcu.</p>
             </section>
 
-            <article>
-                <h2>Class 3 Tornando Warning</h2>
-                <h4>by Devin Campbell</h4>
-                <p>placeholder paragraph</p>
-                <p>here is another paragraph</p>
-                <!--image-->
-                <img src="images/tornado-541911_1280.jpg" alt="tornado img" id="tornado">
-            </article>
-
-    
-            <section class="contact">
-                <h4>Umbrella Weather</h4>
-                <p>30 N 1st E Preston, ID 83263</p>
-                <p>878.333.3288</p>
-                <p>umbrellaweather@tws.com</p>
-                <!--area for media icons-->
-                <!--map-->
-                <img src="images/map.png" alt="map of Preston area" id="map">
+            <section class="clearfix">
+                <div class="contact">
+                    <h4>Umbrella Weather</h4>
+                    <p>30 N 1st E Preston, ID 83263</p>
+                    <p>878.333.3288</p>
+                    <p>umbrellaweather@tws.com</p>
+                    <!--area for media icons-->
+                </div>
+                <figure id="map">
+                    <img src="images/map.png" alt="map of Preston area">
+                </figure>
             </section>        
         </main>
 
         <footer>
             &copy;2020 Umbrella Weather | CIT 230 | Alani Gilbert <br>
-            Wednesday, 20 May 2020
+            <p onload="currentDate();"></p>
         </footer>
 
     </body>
