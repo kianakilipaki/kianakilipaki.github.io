@@ -1,0 +1,44 @@
+@media only screen and (min-width: 560px) {
+    
+    /*================Header================*/
+    header img {
+        width: auto;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+    }
+
+    /*================Nav================*/
+    .navigation li:first-child { 
+        display: none;	
+    }
+
+	nav li { 
+        display: block;
+        float: left;
+        width: 20%;
+    }
+
+    /*================Main================*/
+    .article {
+        max-width: 980px;
+        margin: auto;
+    }
+
+    section #tornado {
+        width: 50%;
+        float: right;
+        margin: 10px;
+    }
+
+    section #map {
+        width: 50%;
+        float: right;
+        margin: 10px;
+    }
+} /* end of media query*/

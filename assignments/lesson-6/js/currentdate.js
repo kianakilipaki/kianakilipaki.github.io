@@ -1,3 +1,4 @@
 function currentDate() {
-    // I knew this at some point...
+    var x = new Date();
+    document.getElementById("date").innerHTML = x;
 }

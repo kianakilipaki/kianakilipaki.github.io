@@ -1,0 +1,3 @@
+function currentDate() {
+    // I knew this at some point...
+}
