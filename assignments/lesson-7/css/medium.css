@@ -41,4 +41,10 @@
         float: right;
         margin: 10px;
     }
+
+    .images {
+        display: flex;
+        flex-flow: row wrap; 
+    }
+
 } /* end of media query*/

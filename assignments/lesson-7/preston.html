@@ -15,7 +15,8 @@
 
             <!--Javascript-->
             <script src="./js/hamburger.js"></script>
-            <script src="js/currentdate.js"></script>
+            <script src="./js/currentdate.js"></script>
+            <script src="./js/windchill.js"></script>
     </head>
 
     <body>
@@ -29,11 +30,11 @@
         <nav class="clearfix">
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li><a href="preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </nav>
 
@@ -47,10 +48,10 @@
                 <h2>Weather Summary</h2>
                 <ul>
                     <li>Currently: <span>Sunny</span></li>
-                    <li>High: <span>76 &#8457;</span></li>
-                    <li>Wind Chill: <span>78 &#8457;</span></li>
+                    <li>High: <span id="temp">76</span><span> &#8457;</span></li>
+                    <li>Wind Chill: <span id="wind-chill">78</span><span> &#8457;</span></li>
                     <li>Humidity: <span>69%</span></li>
-                    <li>Wind Speed: <span>5 mph</span></li>
+                    <li>Wind Speed: <span id="speed">8</span><span> mph</span></li>
                 </ul>
             </section>
 

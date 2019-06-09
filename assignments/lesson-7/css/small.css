@@ -145,6 +145,25 @@ section #tornado {
     width: 100%;
 }
 
+.images img {
+    height: 200px;
+    border: 2px solid #222;
+    border-radius: 5px;
+}
+
+.images figure {
+    width: 400px;
+    margin: 10px auto;
+    background-color: #666;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.8em;
+}
+
 /*================Footer================*/
 
 footer {
