@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="EN-US">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>UmbrellaWeather | Preston</title>
+            <meta name="description" content="Site plan for the umbrellaweather.net website.">
+            
+            <!--Stylesheets-->
+            <link rel="stylesheet" href="./css/normalize.css">
+            <link rel="stylesheet" href="./css/small.css">
+            <link rel="stylesheet" href="./css/medium.css">
+            <link rel="stylesheet" href="./css/large.css">
+
+            <!--Javascript-->
+            <script src="./js/hamburger.js"></script>
+            <script src="./js/windchill.js"></script>
+    </head>
+
+    <body>
+        <header class="clearfix">
+            <!--logo-->
+            <img src="images/logo-75.png" alt="umbrella weather logo" id="logo">
+            <h1 class="title">Umbrella Weather</h1>
+            <h3>Is it umbrella weather today?</h3>
+        </header>
+
+        <nav class="clearfix">
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Preston Idaho</h1>
+            <!--image here-->
+            <figure id="banner">            
+                <img src="./images/hero.jpg" alt="hero banner">
+            </figure>
+            <section class="summary">
+                <h2>Weather Summary</h2>
+                <ul>
+                    <li>Currently: <span>Sunny</span></li>
+                    <li>High: <span id="temp">76</span><span> &#8457;</span></li>
+                    <li>Wind Chill: <span id="wind-chill">78</span><span> &#8457;</span></li>
+                    <li>Humidity: <span>69%</span></li>
+                    <li>Wind Speed: <span id="speed">8</span><span> mph</span></li>
+                </ul>
+            </section>
+
+            <section class="article">
+                <figure id="tornado">                
+                    <img src="images/tornado-541911_1280.jpg" alt="Tornado img">
+                    <figcaption>Photo taken by Devin Campbell</figcaption>
+                </figure>
+
+                <h2>Tornado in Preston</h2>
+                <h4>by Devin Campbell</h4>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla enim, 
+                pretium et vehicula non, rutrum sed sapien. Vestibulum efficitur est non magna 
+                lacinia, id vulputate sapien convallis. Etiam eget feugiat ante. Maecenas euismod 
+                felis et tellus eleifend eleifend. Sed scelerisque, arcu sit amet elementum sodales, 
+                metus nisl ullamcorper nibh, eget auctor risus eros vel lorem. Fusce condimentum 
+                magna id pretium tristique. Maecenas sagittis placerat sapien, non scelerisque 
+                odio pulvinar eget. Integer eget congue urna, vel mollis arcu.</p>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla enim, 
+                pretium et vehicula non, rutrum sed sapien. Vestibulum efficitur est non magna 
+                lacinia, id vulputate sapien convallis. Etiam eget feugiat ante. Maecenas euismod 
+                felis et tellus eleifend eleifend. Sed scelerisque, arcu sit amet elementum sodales, 
+                metus nisl ullamcorper nibh, eget auctor risus eros vel lorem. Fusce condimentum 
+                magna id pretium tristique. Maecenas sagittis placerat sapien, non scelerisque 
+                odio pulvinar eget. Integer eget congue urna, vel mollis arcu.</p>
+            </section>
+
+            <section class="clearfix">
+                <div class="contact">
+                    <h4>Umbrella Weather</h4>
+                    <p>30 N 1st E Preston, ID 83263</p>
+                    <p>878.333.3288</p>
+                    <p>umbrellaweather@tws.com</p>
+                    <!--area for media icons-->
+                </div>
+                <figure id="map">
+                    <img src="images/map.png" alt="map of Preston area">
+                </figure>
+            </section>        
+        </main>
+
+        <footer>
+            &copy;2020 Umbrella Weather | CIT 230 | Alani Gilbert <br>
+            <p id="date"></p>
+        </footer>
+
+    </body>
+</html>

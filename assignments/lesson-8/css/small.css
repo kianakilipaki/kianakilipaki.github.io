@@ -1,0 +1,183 @@
+/*stylesheet for preston-4.html*/
+
+
+/*============Imported fonts==============*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+
+body {
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #e6e1c5;
+}
+
+/*================Header================*/
+
+header {
+    background-color: #395c6b;
+    color: #222;
+    padding: 1rem 2%;
+    margin: auto;
+}
+
+header img {
+    float: left;
+    width: 50px;
+    margin: 5px;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/*================Nav================*/
+
+nav {
+    background-color: #000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: none;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: #bcd3f2;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #bcd3f2;
+    color: #395c6b;
+}
+
+nav a:active {
+    background-color: #80a4ed;
+}
+
+nav li:first-child { 
+    display: block;
+}
+
+.responsive li { 
+    display: block; 
+}
+
+/*================Main================*/
+
+main {
+    padding: 0;
+    display: block;
+}
+
+main h1 {
+    color: #395c6b;
+    padding: 1rem 2%;
+}
+
+#banner {
+    width: 100%;
+    margin: 0;
+}
+
+#banner img {
+    width: 100%;
+}
+
+.summary {
+    padding: 1rem 2%;
+    background-color: #80a4ed;
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+}
+
+.summary ul {
+    list-style-type: none;
+
+}
+
+.article {
+    background-color: #bcd3f2;
+    margin: 1rem 2%;
+    border: 2px solid #80a4ed;
+    border-radius: 10px;
+    padding: 1rem 2%;
+}
+section #tornado {
+    width: 100%;
+    margin: 5px auto;
+}
+#tornado img {
+    width: 100%;
+    box-shadow: 1px 1px 5px 1px #666;
+}
+
+#tornado figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.contact {
+    width: 60%;
+    margin: auto;
+}
+
+#map {
+    width: 100%;
+    margin: 0;
+}
+
+#map img {
+    width: 100%;
+}
+
+.images img {
+    height: 200px;
+    border: 2px solid #222;
+    border-radius: 5px;
+}
+
+.images figure {
+    width: 400px;
+    margin: 10px auto;
+    background-color: #666;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.8em;
+}
+
+/*================Footer================*/
+
+footer {
+    background-color: #395c6b;
+    border-top: 5px solid #000;
+    text-align: center;
+    color: #bcd3f2;
+    padding: 10px;
+}
+
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
