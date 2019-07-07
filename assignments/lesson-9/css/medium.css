@@ -15,7 +15,7 @@
 
     /*================Nav================*/
     .navigation li:first-child { 
-        display: none;	
+        display: inline-block;	
     }
 
 	nav li { 
