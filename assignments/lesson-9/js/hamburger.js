@@ -3,8 +3,8 @@ function toggleMenu() {
 }
 
 function currentDate() {
-    var x = 6/25/2019;
-    document.getElementById("date").innerHTML = x;
+    var d = new Date();
+    document.getElementById("date").innerHTML = d.toDateString();
 }
 
 function adjustRating(rating) {

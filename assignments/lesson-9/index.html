@@ -38,7 +38,27 @@
         </nav>
 
         <section>
-
+            <div id="myData"></div>
+            <script>
+                fetch('https://byui-cit230.github.io/weather/data/towndata.json')
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        appendData(data);
+                    })
+                    .catch(function (err) {
+                        console.log('error: ' + err);
+                    });
+                function appendData(data) {
+                    var mainContainer = document.getElementById("myData");
+                    for (var i = 0; i < data.length; i++) {
+                        var div = document.createElement("div");
+                        div.innerHTML = data[i].towns;
+                        mainContainer.appendChild(div);
+                    }
+                }
+            </script>
         </section>
 
         <footer>
@@ -49,36 +69,6 @@
         <script>
             currentDate();
             windChill();
-
-            var header = document.querySelector('header');
-            var section = document.querySelector('section');
-            
-            // store JSON data in a variable
-            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-            
-            // create request object, open, and send
-            var request = new XMLHttpRequest();
-            request.open('GET', requestURL);
-            request.responseType = 'json';
-            request.send();
-
-            // pass the new object to the section
-            request.onload = function() {
-                var towndata = request.response;
-                populateTowns(towndata);
-            }
-
-            // here is the section data
-            function populateTowns(jsonObj) {
-                var myH1 = document.createElement('h1');
-                myH1.textContent = jsonObj['name'];
-                header.appendChild(myH1);
-
-                for (let town of towndata) {
-                    console.log(town);
-
-                }
-            }
 
         </script>
 

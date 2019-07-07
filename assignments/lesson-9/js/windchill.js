@@ -5,7 +5,8 @@ function windChill() {
 
     //calculate wind chill
     let x = 35.74 + 0.6215 * t - 35.75 * Math.pow(s, 0.16) + 0.4275 * t * Math.pow(s, 0.16);
-
+    x = Math.round(x * 10) / 10;
+    
     //return windchill
     document.getElementById("wind-chill").innerHTML = x;
 
