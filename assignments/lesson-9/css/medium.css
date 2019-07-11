@@ -25,19 +25,22 @@
     }
 
     /*================Main================*/
+
+    #banner {
+        height: 400px;
+    }
+
+    .summary {
+        left: 40px;
+    }
+
     .article {
         max-width: 980px;
         margin: auto;
     }
 
-    section #tornado {
-        width: 50%;
-        float: right;
-        margin: 10px;
-    }
-
     section #map {
-        width: 50%;
+        width: 30%;
         float: right;
         margin: 10px;
     }

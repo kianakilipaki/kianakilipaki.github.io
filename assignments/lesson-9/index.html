@@ -14,7 +14,6 @@
 
             <!--Javascript-->
             <script src="./js/hamburger.js"></script>
-            <script src="./js/windchill.js"></script>
     </head>
 
     <body>
@@ -38,24 +37,56 @@
         </nav>
 
         <section>
-            <div id="myData"></div>
+            <div id="myData" class="clearfix"></div>
+
             <script>
-                fetch('https://byui-cit230.github.io/weather/data/towndata.json')
-                    .then(function (response) {
-                        return response.json();
-                    })
-                    .then(function (data) {
-                        appendData(data);
-                    })
-                    .catch(function (err) {
-                        console.log('error: ' + err);
-                    });
+            // store JSON data in a variable
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+                
+                // create request object, open, and send
+                var request = new XMLHttpRequest();
+                request.open('GET', requestURL);
+                request.responseType = 'json';
+                request.send();
+
+                // pass the new object appendData
+                request.onload = function() {
+                var data = request.response;
+                appendData(data);
+                }
+
+                // fill myData with json data
                 function appendData(data) {
                     var mainContainer = document.getElementById("myData");
-                    for (var i = 0; i < data.length; i++) {
+                    
+                    for (var i = 0; i < data.towns.length; i++) {
                         var div = document.createElement("div");
-                        div.innerHTML = data[i].towns;
+                        var name = document.createElement("h2");
+                        var photo = document.createElement("img");
+                        var motto = document.createElement("h4");
+                        var year = document.createElement("p");
+                        var pop = document.createElement("p");
+                        var rain = document.createElement("p");
+                        var events = document.createElement("p");
+
+                        name.textContent = data.towns[i].name;
+                        photo.textContent = data.towns[i].photo;
+                        motto.textContent = data.towns[i].motto;
+                        year.textContent = "Year Founded: " + data.towns[i].yearFounded;
+                        pop.textContent = "Current Population: " + data.towns[i].currentPopulation;
+                        rain.textContent = "Average Rainfall: " + data.towns[i].averageRainfall;
+                        events.textContent = "Events: " + data.towns[i].events;
+
+                        div.appendChild(name);
+                        div.appendChild(photo);
+                        div.appendChild(motto);
+                        div.appendChild(year);
+                        div.appendChild(pop);
+                        div.appendChild(rain);
+                        div.appendChild(events);
+                        
                         mainContainer.appendChild(div);
+                        console.log(data.towns[i].name);
                     }
                 }
             </script>
@@ -67,9 +98,8 @@
         </footer>
 
         <script>
+            // call currentDate for footer
             currentDate();
-            windChill();
-
         </script>
 
     </body>
