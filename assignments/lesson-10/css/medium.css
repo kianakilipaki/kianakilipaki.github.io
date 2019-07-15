@@ -1,0 +1,48 @@
+@media only screen and (min-width: 560px) {
+    
+    /*================Header================*/
+    header img {
+        width: auto;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+    }
+
+    /*================Nav================*/
+    .navigation li:first-child { 
+        display: none;	
+    }
+
+	nav li { 
+        display: block;
+        float: left;
+        width: 15%;
+        box-sizing: border-box;
+    }
+
+    /*================Main================*/
+
+    #banner {
+        height: 400px;
+    }
+
+    .summary {
+        left: 40px;
+    }
+
+    .article {
+        max-width: 980px;
+        margin: auto;
+    }
+
+    .images {
+        display: flex;
+        flex-flow: row wrap; 
+    }
+
+} /* end of media query*/

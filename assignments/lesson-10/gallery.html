@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="EN-US">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>UmbrellaWeather | Preston</title>
+            <meta name="description" content="Site plan for the umbrellaweather.net website.">
+            
+            <!--Stylesheets-->
+            <link rel="stylesheet" href="./css/normalize.css">
+            <link rel="stylesheet" href="./css/small.css">
+            <link rel="stylesheet" href="./css/medium.css">
+            <link rel="stylesheet" href="./css/large.css">
+
+            <!--Javascript-->
+            <script src="./js/hamburger.js"></script>
+            <script src="js/currentdate.js"></script>
+    </head>
+
+    <body>
+        <header class="clearfix">
+            <!--logo-->
+            <img src="images/logo-75.png" alt="umbrella weather logo" id="logo">
+            <h1 class="title">Umbrella Weather</h1>
+            <h3>Is it umbrella weather today?</h3>
+        </header>
+
+        <nav class="clearfix">
+            <ul class="navigation">
+                <li><a onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Weather Gallery</h1>
+
+            <section class="images">
+                <figure>
+                    <img src="./images/josep-castells-523198-unsplash.jpg" alt="Storm photo">
+                    <figcaption>Photo by Josep Castells</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/nikolas-noonan-682177-unsplash.jpg" alt="Storm photo">
+                    <figcaption>Photo by Nikolas Noonan</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/tornado-541911_1280.jpg" alt="Storm photo">
+                    <figcaption>Photo by Devin Campbell</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/nasa-63030-unsplash.jpg" alt="Storm photo">
+                    <figcaption>Photo by NASA</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/jeremy-bishop-72584-unsplash.jpg" alt="Storm photo">
+                    <figcaption>Photo by Jeremy Bishop</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/xu-haojie-1368055-unsplash.jpg" alt="Storm photo">
+                    <figcaption>Photo by Xu haojie</figcaption>
+                </figure>
+
+            </section>
+        </main>
+
+        <footer>
+            &copy;2020 Umbrella Weather | CIT 230 | Alani Gilbert <br>
+            <p id="date"></p>
+        </footer>
+    </body>
+</html>
