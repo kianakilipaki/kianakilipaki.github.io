@@ -28,7 +28,8 @@
         <!--Navigation-->
         <nav class="clearfix">
             <ul class="navigation">
-                <li><a href="index.html" onclick="toggleMenu()">&#9776; Home</a></li>
+                <li><a onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
@@ -44,7 +45,7 @@
         <form method="GET" action="thanks.html">
             <fieldset><!--Personal Information-->
                 <legend>Personal Information</legend>
-                <label>Full Name* <input type="text" name="fname" pattern="[A-Be-a3]" required></label><br>
+                <label>Full Name* <input type="text" name="fname" pattern="[A-Za-z]{5}" required></label><br>
                 <label>Phone Number* <input type="tel" name="phone" placeholder="123444134" required></label><br>
                 <label>Email <input type="email" name="email" placeholder="someone@gmail.com"></label><br>
                 <label>Zip code* <input type="number" name="zip" required></label>

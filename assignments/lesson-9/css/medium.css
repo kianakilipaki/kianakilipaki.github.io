@@ -15,13 +15,14 @@
 
     /*================Nav================*/
     .navigation li:first-child { 
-        display: inline-block;	
+        display: none;	
     }
 
 	nav li { 
         display: block;
         float: left;
-        width: 20%;
+        width: 15%;
+        box-sizing: border-box;
     }
 
     /*================Main================*/
@@ -37,12 +38,6 @@
     .article {
         max-width: 980px;
         margin: auto;
-    }
-
-    section #map {
-        width: 30%;
-        float: right;
-        margin: 10px;
     }
 
     .images {
