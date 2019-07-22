@@ -15,7 +15,7 @@
 
             <!--Javascript-->
             <script src="./js/hamburger.js"></script>
-            <script src="./js/windchill.js"></script>
+            <script src="./js/weatherapi.js"></script>
     </head>
 
     <body>
@@ -46,15 +46,41 @@
             <section class="summary">
                 <h2>Weather Summary</h2>
                 <ul>
-                    <li>Currently: <span>Sunny</span></li>
-                    <li>High: <span id="temp">76</span><span> &#8457;</span></li>
-                    <li>Wind Chill: <span id="wind-chill">78</span><span> &#8457;</span></li>
-                    <li>Humidity: <span>69%</span></li>
-                    <li>Wind Speed: <span id="speed">8</span><span> mph</span></li>
+                    <li>Currently: <span id="desc"></span></li>
+                    <li>High: <span><span id="temp"></span> &#8457;</span></li>
+                    <li>Wind Chill: <span><span id="wind-chill"></span> &#8457;</span></li>
+                    <li>Humidity: <span><span id="humidity"></span>%</span></li>
+                    <li>Wind Speed: <span><span id="speed"></span> mph</span></li>
                 </ul>
             </section>
             </div>
 
+            <section class="days">
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <tr>
+                        <th id="day0"></th>
+                        <th id="day1"></th>
+                        <th id="day2"></th>
+                        <th id="day3"></th>
+                        <th id="day4"></th>
+                    </tr>
+                    <tr>
+                        <td><img id="img0" src="" alt=""></td>
+                        <td><img id="img1" src="" alt=""></td>
+                        <td><img id="img2" src="" alt=""></td>
+                        <td><img id="img3" src="" alt=""></td>
+                        <td><img id="img4" src="" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td id="temp0"></td>
+                        <td id="temp1"></td>
+                        <td id="temp2"></td>
+                        <td id="temp3"></td>
+                        <td id="temp4"></td>
+                    </tr>
+                </table>
+            </section>
 
             <section class="article clearfix">
                 <article class="right">
@@ -90,8 +116,8 @@
             <section class="contact-page clearfix">
                     <h4>Umbrella Weather</h4>
                     <p>30 N 1st E Preston, ID 83263</p>
-                    <p>878.333.3288</p>
-                    <p>umbrellaweather@tws.com</p>
+                    <p>&phone; (878)333-3288</p>
+                    <p>&#9993; umbrellaweather@tws.com</p>
                     <!--area for media icons-->
                     <figure id="map">
                         <img src="images/map.png" alt="map of Preston area">
@@ -105,7 +131,6 @@
         </footer>
         <script>
             currentDate();
-            windChill();
         </script>
 
     </body>
