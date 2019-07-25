@@ -93,8 +93,11 @@ function getDay(i) {
         case 5:
             day = "Fri";
             break;
-        default:
+        case 6:
             day = "Sat";
+            break;
+        default:
+            day = "Sun";
     }
     return day;
 

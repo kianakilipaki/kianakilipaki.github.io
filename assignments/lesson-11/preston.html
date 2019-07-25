@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="EN-US">
+    <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>UmbrellaWeather | Preston</title>
+            <meta name="description" content="Preston town weather page">
+            
+            <!--Stylesheets-->
+            <link rel="stylesheet" href="./css/normalize.css">
+            <link rel="stylesheet" href="./css/small.css">
+            <link rel="stylesheet" href="./css/medium.css">
+            <link rel="stylesheet" href="./css/large.css">
+
+            <!--Javascript-->
+            <script src="./js/hamburger.js"></script>
+            <script src="./js/weatherapi.js"></script>
+    </head>
+
+    <body>
+        <header class="clearfix">
+            <!--logo-->
+            <img src="images/logo-75.png" alt="umbrella weather logo" id="logo">
+            <h1 class="title">Umbrella Weather</h1>
+            <h3>Is it umbrella weather today?</h3>
+        </header>
+
+        <nav class="clearfix">
+            <ul class="navigation">
+                <li><a onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Preston Idaho</h1>
+            <!--image here-->
+            <div id="banner">
+            
+            <section class="summary">
+                <h2>Weather Summary</h2>
+                <ul>
+                    <li>Currently: <span id="desc"></span></li>
+                    <li>High: <span><span id="temp"></span> &#8457;</span></li>
+                    <li>Wind Chill: <span><span id="wind-chill"></span> &#8457;</span></li>
+                    <li>Humidity: <span><span id="humidity"></span>%</span></li>
+                    <li>Wind Speed: <span><span id="speed"></span> mph</span></li>
+                </ul>
+            </section>
+            </div>
+
+            <section class="days">
+                <h3>5 Day Forecast</h3>
+                <table>
+                    <tr>
+                        <th id="day0"></th>
+                        <th id="day1"></th>
+                        <th id="day2"></th>
+                        <th id="day3"></th>
+                        <th id="day4"></th>
+                    </tr>
+                    <tr>
+                        <td><img id="img0" src="" alt=""></td>
+                        <td><img id="img1" src="" alt=""></td>
+                        <td><img id="img2" src="" alt=""></td>
+                        <td><img id="img3" src="" alt=""></td>
+                        <td><img id="img4" src="" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td id="temp0"></td>
+                        <td id="temp1"></td>
+                        <td id="temp2"></td>
+                        <td id="temp3"></td>
+                        <td id="temp4"></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="article clearfix">
+                <article class="right">
+                    <figure id="tornado">                
+                        <img src="images/tornado-541911_1280.jpg" alt="Tornado img">
+                        <figcaption>Photo taken by Devin Campbell</figcaption>
+                    </figure>
+                </article>
+
+                <article class="left">
+                    <h2>Tornado in Preston</h2>
+                    <h4>by Devin Campbell</h4>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla enim, 
+                    pretium et vehicula non, rutrum sed sapien. Vestibulum efficitur est non magna 
+                    lacinia, id vulputate sapien convallis. Etiam eget feugiat ante. Maecenas euismod 
+                    felis et tellus eleifend eleifend. Sed scelerisque, arcu sit amet elementum sodales, 
+                    metus nisl ullamcorper nibh, eget auctor risus eros vel lorem. Fusce condimentum 
+                    magna id pretium tristique. Maecenas sagittis placerat sapien, non scelerisque 
+                    odio pulvinar eget. Integer eget congue urna, vel mollis arcu.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla enim, 
+                    pretium et vehicula non, rutrum sed sapien. Vestibulum efficitur est non magna 
+                    lacinia, id vulputate sapien convallis. Etiam eget feugiat ante. Maecenas euismod 
+                    felis et tellus eleifend eleifend. Sed scelerisque, arcu sit amet elementum sodales, 
+                    metus nisl ullamcorper nibh, eget auctor risus eros vel lorem. Fusce condimentum 
+                    magna id pretium tristique. Maecenas sagittis placerat sapien, non scelerisque 
+                    odio pulvinar eget. Integer eget congue urna, vel mollis arcu.</p>
+                </article>
+
+            </section>
+
+            <section class="contact-page clearfix">
+                    <h4>Umbrella Weather</h4>
+                    <p>30 N 1st E Preston, ID 83263</p>
+                    <p>&phone; (878)333-3288</p>
+                    <p>&#9993; umbrellaweather@tws.com</p>
+                    <!--area for media icons-->
+                    <figure id="map">
+                        <img src="images/map.png" alt="map of Preston area">
+                    </figure>
+            </section>        
+        </main>
+
+        <footer>
+            &copy;2020 Umbrella Weather | CIT 230 | Alani Gilbert <br>
+            <p id="date"></p>
+        </footer>
+        <script>
+            currentDate();
+        </script>
+
+    </body>
+</html>
