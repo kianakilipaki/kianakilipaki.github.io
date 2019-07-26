@@ -209,9 +209,14 @@ main h1 {
     text-align: center;
     margin: 30px auto;
 }
-.contact-page img {
+
+.contact-page #map {
     width: 90%;
     border: 2px solid #222;
+}
+
+.contact-page #socials img {
+    margin: 10px;
 }
 
 /*================gallery page================*/
