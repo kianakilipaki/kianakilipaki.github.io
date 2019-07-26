@@ -12,8 +12,30 @@
         padding: .5rem 1rem;
     }
 
-    #banner {
-        height: 500px;
+    /*home-page*/
+    #myData {
+        width: 960px;
+        margin: 20px auto;
+    }
+
+    #myData div {
+        width: 250px;
+        font-size: 1.2em;
+    }
+
+    /*towns-page*/
+    .article {
+        width: 60%;
+        margin: 40px auto;
+        font-size: 1.2em;
+    }
+
+    .float {
+        width: 40%;
+    }
+
+    .contact-page img {
+        width: 50%;
     }
 
 } /* end of media query*/

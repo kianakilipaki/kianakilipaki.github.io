@@ -65,10 +65,10 @@
                     </datalist>
                 </label>
 
-                <div>Storm Severity</div>
-                <label for="rating">Rating (1 to 10):</label>
-		        <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                <span id="ratingvalue">5</span><br>
+                <label>Storm Severity <br>
+                    <span class="small">Rating (1 to 10):</span>
+		            <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span><br></label>
                         
                 <label>Storm Region
                     <select name="Region">                                
@@ -79,16 +79,16 @@
                     </select>
                 </label><br>
     
-                <div>User in-danger level</div> 
-                <label><input type="radio" name="level" value="yes"> Yes</label>
-                <label><input type="radio" name="level" value="maybe"> Maybe</label>
-                <label><input type="radio" name="level" value="no"> No</label><br>
+                <label id="in-danger">User in-danger level
+                <label><input class="click" type="radio" name="level" value="yes"> Yes</label>
+                <label><input class="click" type="radio" name="level" value="maybe"> Maybe</label>
+                <label><input class="click" type="radio" name="level" value="no"> No</label></label><br>
                    
-                <label>Additional Comments</label>
-                <textarea name="comments"></textarea>
+                <label>Additional Comments
+                    <textarea name="comments" placeholder="Leave extra info here..."></textarea></label>
             </fieldset>
     
-                <input type="submit" value="Submit My Storm Report">                    
+                <input type="submit" value="Submit Storm Report" id="button">                    
         </form>
 
     </main>

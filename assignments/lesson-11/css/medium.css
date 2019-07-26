@@ -3,6 +3,7 @@
     /*================Header================*/
     header img {
         width: auto;
+        margin-right: 20px;
     }
 
     header h1 {
@@ -25,24 +26,82 @@
         box-sizing: border-box;
     }
 
-    /*================Main================*/
-
-    #banner {
-        height: 400px;
+    /*================Home================*/
+    #myData {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+
+    #myData div {
+        width: 200px;
+    }
+
+    #myData img {
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    /*================Town================*/
 
     .summary {
         left: 40px;
     }
 
-    .article {
-        max-width: 980px;
-        margin: auto;
+    .days {
+        width: 515px;
     }
+
+    .article {
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    .float {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px 15px 8px 0px;
+    }
+
+    .contact-page img {
+        width: 60%;
+    } 
+
+    /*================Gallery================*/
 
     .images {
         display: flex;
         flex-flow: row wrap; 
+    }
+
+    .images figure {
+        width: 400px;
+    }
+
+    .images img {
+        height: 200px;
+        width: auto;
+    }
+
+    /*================Form================*/
+
+    form {
+        width: 600px;
+    }
+
+    form input, form label {
+        width: auto;
+    }
+
+    form textarea {
+        width: 400px;
+    }
+
+    form #button {
+        font-size: 1em;
+        width: auto;
     }
 
 } /* end of media query*/
