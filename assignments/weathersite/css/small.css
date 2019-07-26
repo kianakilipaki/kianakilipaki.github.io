@@ -4,6 +4,7 @@
 /*============Imported fonts==============*/
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap'); 
 
 
 body {
@@ -35,7 +36,9 @@ header h1 {
 
 header h3 {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Reenie Beanie', cursive, sans-serif;
+    padding-left: 8px;
 }
 
 /*================Nav================*/
@@ -268,7 +271,7 @@ form .small {
 }
 
 form .click {
-    display: inline;
+    display: inline-block;
     width: auto;
 }
 
