@@ -277,6 +277,12 @@ form #rating {
     margin: auto;
 }
 
+form #in-danger {
+    width: 100%;
+    display: block;
+    padding: 0px;
+}
+
 form #ratingvalue {
     color: #666;
     font-size: 0.8em;
