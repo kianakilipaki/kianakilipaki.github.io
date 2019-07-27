@@ -40,15 +40,16 @@
     }
 
     /***temples***/
-    .temples {
+    #templesData {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
     }   
 
-    .temples figure {
-        width: 20%;
-        margin: 50px 20px;
+    #templesData div {
+        width: 40%;
+        margin: 20px;
     }
 
     /***services***/

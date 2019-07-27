@@ -61,6 +61,7 @@ header {
 
 .nav a:active {
     background-color: #fff;
+    color: #58697c;
 }
 
 .nav li:first-child { 
@@ -146,20 +147,26 @@ header {
     color: #58697c;
 }
 
-.temples figure {
-    width: 90%;
-    margin: 30px auto;
+#templesData div {
+    margin: 20px auto;
 }
 
-.temples img {
+#templesData img {
+    margin: 40px auto 10px auto;
     width: 100%;
-    box-shadow: 0px 0px 3px 0px #58697c;
+    box-shadow: 0px 0px 4px 0px #58697c;
 }
 
-.temples figcaption {
+#templesData h2 {
     font-family: 'adobe caslon pro', Georgia, 'Times New Roman', Times, serif;
     color: #f7e7b9;
-    margin-top: 5px;
+    font-size: 1.5em;
+    margin: 0px 20px;
+}
+
+#templesData p {
+    color: #062344;
+    margin: 0px 20px;
     font-size: 1.2em;
 }
 
