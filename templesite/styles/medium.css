@@ -1,0 +1,116 @@
+@media only screen and (min-width: 560px) {
+
+    /****Nav****/
+    .nav li:first-child { 
+        display: none;	
+    }
+
+    .nav {
+       text-align: center;
+    }
+
+	.nav li { 
+        display: inline-block;
+        
+    }
+
+    .nav a {
+        padding: 10px 20px;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    /***home***/
+    #invite {
+        width: 500px;
+        margin: 40px auto;
+    }
+
+    .event {
+        width: 700px;
+        margin: 20px auto;
+    }
+
+    .event figure {
+        float: left;
+        margin: 20px;
+        width: 30%;
+    }
+
+    /***temples***/
+    .temples {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }   
+
+    .temples figure {
+        width: 20%;
+        margin: 50px 20px;
+    }
+
+    /***services***/
+    .services {
+        width: 700px;
+        margin: 50px auto;
+        font-size: 1.2em;
+    }
+
+    .full-time {
+        width: 700px;
+        margin: 20px auto;
+    }
+
+    .contact-fulltime {
+        margin: 30px;
+        font-size: 0.8em;
+    }
+
+    .full-time p {
+        margin: 0px 20px;
+    }
+
+    .left, .right {
+        margin: 20px;
+    }
+
+    .right figure {
+        float: right;
+        width: 30%;
+    }
+
+    .left figure{
+        float: left;
+        width: 30%;
+        margin: 0px 15px;
+    }
+
+    /***reservation***/
+    .reserve {
+        width: 400px;
+        margin: 40px auto;
+        font-size: 1.2em;
+    }
+
+    .reserve h1 {
+        font-size: 1.6em;
+    }
+
+    .reserve textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    /***contact***/
+    .contact {
+        width: 700px;
+        margin: 30px auto;
+    }
+
+    iframe {
+        height: 200px;
+    }
+
+} /*end of medium.css*/

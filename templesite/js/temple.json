@@ -1,0 +1,32 @@
+{
+    "temples": [
+        {
+            "name": "Denver Temple",
+            "photo": "images/denver-temple-lds-999518-mobile.jpg",
+            "address": "2001 East Phillips Circle Centennial, Colorado  80122",
+            "phone": "(303)730-0220",
+            "Dedication": "24–28 October 1986 by Ezra Taft Benson"
+        },
+        {
+            "name": "Cedar City Temple",
+            "photo": "images/cedar-city-utah-temple-exterior-1979850-mobile.jpg",
+            "address": "280 South Cove Dr Cedar City UT 84720",
+            "phone": "(435)572-4150",
+            "Dedication": "10 December 2017"
+        },
+        {
+            "name": "Idaho Falls Temple",
+            "photo": "images/idaho-falls-temple-lds-776398-mobile.jpg",
+            "address": "1000 Memorial Dr Idaho Falls ID 83402-3410",
+            "phone": "(208)522-7669",
+            "Dedication": "23 September 1945"
+        },
+        {
+            "name": "Atlanta Temple",
+            "photo": "images/atlanta-temple-lds-811727-mobile.jpg",
+            "address": "6450 Barfield Rd NE Sandy Springs GA 30328-4283",
+            "phone": "(770)393-3698",
+            "Dedication": "1 June 1983"
+        }
+    ]
+}

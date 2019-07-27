@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites</title>
+    <meta name="description" content="Temple Inn & Suites home page">
+    
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+</head>
+<body>
+    <header>
+        <!--logo-->
+        <div id="logo">
+            <img src="images/logo.png" alt="temple inn logo">
+        </div>
+
+        <!--main navigation-->
+        <nav class="clearfix">
+            <ul class="nav">
+                <li><a onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservation.html">Make a Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--temple banner img-->
+    <div id="banner-container">
+        <div id="banner"></div>
+    </div>
+
+    <main>
+        <div id="invite">
+            We invite you stay at one of our beautiful Temple Inns. Where members can rest or prepare for the Temple, in quiet
+            reverence.<br>
+            <a href="reservation.html">Make a Reservation</a>
+        </div>
+
+        <!--temple event article-->
+        <article class="event clearfix">
+            <figure>
+                <img id="denver" src="images/denver-temple-lds-999518-mobile.jpg" alt="going to the temple image">
+                <figcaption>Image taken from lds.org</figcaption>
+            </figure>
+
+            <section>
+                <h2>The Denver, Colorado Temple</h2>
+                <h4><i>by Damon Harvack</i></h4>
+
+                <p>The Denver Temple was the first temple built in Colorado, in 1858. 
+                    In the beginning the temple had trouble, traffic concerns, neighbors 
+                    who complained about the lighting of the Temple at night, but eventually 
+                    thanks to some faithful members of the church the Temple was built 
+                    and eventually even the neighbors preferred the beauty of the temple 
+                    lights. The Denver Temple acted like a beacon to the members of the church 
+                    and more than 28,000 members attended the dedication.
+                </p>
+            </section>
+        </article>
+
+    </main>
+    <footer class="clearfix">
+        <!--footer navigation and info-->
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="full-time.html">Full-time Temple Missionary</a></li>
+            <li><a href="reservation.html">Make a Reservation</a></li>
+            <li><a href="wedding.html">Wedding Reception</a></li>
+        </ul>
+
+        <p>&copy; Copyright 2019 Temple Inns & Suites | CIT230 <br> 
+        <img src="images/logo.png" alt="temple inn logo"></p>
+
+    </footer>
+    <!--Javascript-->
+    <script src="./js/hamburger.js"></script>
+</body>
+</html>

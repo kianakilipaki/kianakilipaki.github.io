@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites | Services</title>
+    <meta name="description" content="Temple Inn & Suites services page- Missionary services">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+</head>
+
+<body>
+    <header>
+        <!--logo-->
+        <div id="logo">
+            <img src="images/logo.png" alt="temple inn logo">
+        </div>
+
+        <!--main navigation-->
+        <nav class="clearfix">
+            <ul class="nav">
+                <li><a onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservation.html">Make a Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--temple banner img-->
+    <div id="banner-container">
+        <div id="banner"></div>
+    </div>
+
+    <main class="full-time">
+        <div class="header">
+            <h1>Staying Full-time Services</h1>
+        </div>
+
+        <!--Fulltime living arrangments-->
+        <div class="left clearfix block">
+            <figure>
+                <img src="images/mexico-working-620796-mobile.jpg" alt="missionary couple">
+                <figcaption>Photo by lds.org</figcaption>
+            </figure>
+            <p>The Temple Inn allows temple missionaries to live there full-time, so that they are 
+                allows near the temple. Temple missionaries do not have to travel far anymore
+            </p>
+        </div>
+        <div class="right clearfix">
+            <figure>
+                <img src="images/radoslav-bali-hLdeUT_HE2E-unsplash.jpg" alt="temple room img">
+                <figcaption>Photo by Radoslav Bali</figcaption>
+            </figure>
+            <h3>Living Amenities</h3>
+            <p>Here is an image of one of the rooms available. One bedroom rooms are available, which include 
+                a small kitchen and bathroom. Rooms do include wi-fi and internet access. 
+            </p>
+            <ul>
+                <li>Free wi-fi and smart tv</li>
+                <li>Great view of the Temple</li>
+                <li>Includes breakfast</li>
+                <li>Kitchen and bathroom</li>
+            </ul>
+        </div>
+
+        <div class="contact-fulltime clearfix">
+            <h3>Contact Us about staying fulltime:</h3>
+            <form method="GET" action="thanks.html">
+                <label>Name:* <input type="text" name="name" required></label><br>
+                <label>Email:* <input type="email" name="email" placeholder="someone@gmail.com" required></label><br>
+    
+                <input type="submit" value="Send" id="button">
+            </form>
+        </div>
+    </main>
+    <footer class="clearfix">
+        <!--footer navigation and info-->
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="full-time.html">Full-time Temple Missionary</a></li>
+            <li><a href="reservation.html">Make a Reservation</a></li>
+            <li><a href="wedding.html">Wedding Reception</a></li>
+        </ul>
+
+        <p>&copy; Copyright 2019 Temple Inns & Suites | CIT230 <br>
+            <img src="images/logo.png" alt="temple inn logo"></p>
+
+    </footer>
+    <!--Javascript-->
+    <script src="./js/hamburger.js"></script>
+</body>
+
+</html>

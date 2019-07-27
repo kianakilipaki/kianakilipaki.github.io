@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temple Inn & Suites | Reservations</title>
+    <meta name="description" content="Temple Inn & Suites reservations page">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+
+</head>
+
+<body>
+    <header>
+        <!--logo-->
+        <div id="logo">
+            <img src="images/logo.png" alt="temple inn logo">
+        </div>
+
+        <!--main navigation-->
+        <nav class="clearfix">
+            <ul class="nav">
+                <li><a onclick="toggleMenu()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="temples.html">Temples</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reservation.html">Make a Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!--temple banner img-->
+    <div id="banner-container">
+        <div id="banner"></div>
+    </div>
+
+    <main class="reserve">
+        <div class="header">
+            <h1>Make a Reservation today</h1>
+        </div>
+
+        <form method="GET" action="thanks.html">
+            <label>Name:* <input type="text" name="name" required></label><br>
+            <label>Phone Number* <input type="tel" name="phone" placeholder="123444134" required></label><br>
+            <label>Email:* <input type="email" name="email" placeholder="someone@gmail.com" required></label><br>
+            <label>Which Temple will you be visiting?
+                <select name="temple">
+                    <option value="">Select Temple...</option>
+                    <option value="Idaho Falls Temple">Idaho Falls Temple</option>
+                    <option value="Cedar City Temple">Cedar City Temple</option>
+                    <option value="Denver Temple">Denver Temple</option>
+                    <option value="Atlanta Temple">Atlanta Temple</option>
+                </select>
+            </label><br>
+            <label>When will you be staying with us?<br>
+                From: <input type="date">
+            </label>
+            <label>To: <input type="date"></label><br>
+            <label>Comments: <textarea name="comment" placeholder="Anything you need for your stay..."></textarea></label>
+        
+            <input type="submit" value="Make Your Reservation" id="button">
+        </form>
+
+    </main>
+    <footer class="clearfix">
+        <!--footer navigation and info-->
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul class="footer-nav">
+            <li><a href="full-time.html">Full-time Temple Missionary</a></li>
+            <li><a href="reservation.html">Make a Reservation</a></li>
+            <li><a href="wedding.html">Wedding Reception</a></li>
+        </ul>
+
+        <p>&copy; Copyright 2019 Temple Inns & Suites | CIT230 <br>
+            <img src="images/logo.png" alt="temple inn logo"></p>
+
+    </footer>
+    <!--Javascript-->
+    <script src="./js/hamburger.js"></script>
+</body>
+
+</html>
